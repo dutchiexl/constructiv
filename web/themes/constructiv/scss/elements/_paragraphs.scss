@@ -1,0 +1,24 @@
+.paragraph {
+  @include make-row;
+
+  .column-wrapper {
+    @include container;
+  }
+
+  &.two-columns {
+    .column {
+      @include make-sm-column(6);
+    }
+  }
+  
+  &.two-columns-text {
+    background-color: $brand-secondary;
+    color: $text-color;
+    min-height: 560px;
+    padding-top: 100px;
+  }
+
+  &.header-paragraph {
+    margin-top: -120px;
+  }
+}

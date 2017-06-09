@@ -1,0 +1,84 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function constructiv_preprocess_html(&$variables)
+{
+    if ($node = \Drupal::request()->attributes->get('node')) {
+        if ($node->hasField('header_text_with_bg') && $node->get('header_text_with_bg')->getValue()) {
+            $variables['attributes']['class'][] = 'node-with-header';
+        }
+    }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function constructiv_theme_suggestions_paragraph(array $variables)
+{
+    $suggestions = array();
+    $paragraph = $variables['elements']['#paragraph'];
+    $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+    $suggestions[] = 'paragraph__'.$sanitized_view_mode;
+    $suggestions[] = 'paragraph__'.$paragraph->bundle();
+    $suggestions[] = 'paragraph__'.$paragraph->bundle().'__'.$sanitized_view_mode;
+    die;
+
+    return $suggestions;
+}
+
+/**
+ * @param array $variables
+ */
+function constructiv_preprocess_paragraph__project_teaser_list(array &$variables)
+{
+    $block = views_embed_view('projects', 'project_list_teaser_block');
+    if (!is_null($block)) {
+        $variables['content']['block'] = $block;
+    } else {
+        Drupal::logger('constructiv')->notice('There is something wrong with the projects view. The block with machinename project_list_teaser_block was not found ');
+    }
+}
+
+/**
+ * @param array $variables
+ */
+function constructiv_preprocess_paragraph__news_carousel(array &$variables)
+{
+    $block = views_embed_view('news', 'news_carousel_block');
+    if (!is_null($block)) {
+        $variables['content']['carousel'] = $block;
+    } else {
+        Drupal::logger('constructiv')->notice('There is something wrong with the news view. The block with machinename news_carousel was not found ');
+    }
+}
+
+/**
+ * @param array $variables
+ */
+function constructiv_preprocess_paragraph__2_columns_with_top_10_bugs(array &$variables)
+{
+    $block = views_embed_view('repositories', 'repositories_top_5');
+    if (!is_null($block)) {
+        $variables['repositories'] = $block;
+    } else {
+        Drupal::logger('constructiv')->notice('There is something wrong with the news view. The block with machinename news_carousel was not found ');
+    }
+}
+
+/**
+ * @param $variables
+ */
+function constructiv_preprocess_node(&$variables)
+{
+    /** @var \Drupal\node\Entity\Node $node */
+    $node = $variables['node'];
+    if ($node && $node->hasField('header_text_with_bg') && $node->header_text_with_bg->entity) {
+        $variables['header_image_url'] = file_create_url($node->header_text_with_bg->entity->getFileUri());
+    }
+}

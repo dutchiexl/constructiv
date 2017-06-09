@@ -1,0 +1,11 @@
+name: Image Background Formatter
+type: module
+description: 'Add formatter to render an image as a div with the image as background.'
+# core: 8.x
+package: Cegeka
+dependencies:
+  - image
+
+version: '8.x-1.0'
+core: '8.x'
+project: 'image_background_formatter'

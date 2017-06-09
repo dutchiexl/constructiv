@@ -1,0 +1,39 @@
+{
+  "name": "Kopiloot",
+  "description": "Package configuration for the cegeka Kopiloot application",
+  "main": "gulpfile.js",
+  "authors": [
+    "Neal vanmeert"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/cegeka/kopiloot",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.8.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-copy": "0.0.2",
+    "gulp-csslint": "^0.2.0",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-scss-lint": "^0.3.9",
+    "gulp-shell": "^0.4.2",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-uglifycss": "^1.0.5",
+    "main-bower-files": "^2.11.1"
+  }
+}
