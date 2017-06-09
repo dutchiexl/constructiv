@@ -8,6 +8,9 @@
 
 function constructiv_preprocess_html(&$variables)
 {
+
+    $config = \Drupal::config("system.site");
+
     if ($node = \Drupal::request()->attributes->get('node')) {
         if ($node->hasField('header_text_with_bg') && $node->get('header_text_with_bg')->getValue()) {
             $variables['attributes']['class'][] = 'node-with-header';

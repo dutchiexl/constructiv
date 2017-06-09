@@ -1,0 +1,22 @@
+uuid: 61c9cfc2-4098-4cc0-a573-f534a1be60f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - constructiv
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: constructiv_content
+theme: constructiv
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

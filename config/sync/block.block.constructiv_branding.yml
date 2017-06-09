@@ -1,0 +1,25 @@
+uuid: 7eb47c55-e94d-406d-98b7-8814e431561b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - constructiv
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: constructiv_branding
+theme: constructiv
+region: navigation
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

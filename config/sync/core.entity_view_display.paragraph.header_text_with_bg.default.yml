@@ -1,0 +1,33 @@
+uuid: 2d106bc6-442e-4ae5-96fa-ec1114a41773
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header_text_with_bg.field_background_image
+    - field.field.paragraph.header_text_with_bg.field_text
+    - paragraphs.paragraphs_type.header_text_with_bg
+  module:
+    - image
+    - text
+id: paragraph.header_text_with_bg.default
+targetEntityType: paragraph
+bundle: header_text_with_bg
+mode: default
+content:
+  field_background_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

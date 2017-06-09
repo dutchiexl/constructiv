@@ -1,0 +1,7 @@
+uuid: 8baf0c6c-bc63-4595-a3e7-15c61880d6e7
+langcode: en
+status: true
+dependencies: {  }
+id: header_text_with_bg
+label: 'Header text with background image'
+behavior_plugins: {  }
