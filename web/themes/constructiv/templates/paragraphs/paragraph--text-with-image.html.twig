@@ -45,15 +45,9 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 <div{{ attributes.addClass(classes).setAttribute('id', (content.field_paragraph_id|field_raw).value) }}>
     <div class="column-wrapper">
         <div class="row">
-<<<<<<< HEAD
-<pre>  {{ breakpoint((content.field_layout|field_raw).value) }}</pre>
 
-            <div class="left column red">
-                {% if  content.field_layout.0 == image_on_the_left %}
-=======
             <div class="left column">
                 {% if  (content.field_layout|field_raw).value == "image_left" %}
->>>>>>> 2e46a4bcfb33101c3bed08ecc6c505187fafc4e3
                     {{ content.field_text_image }}
                 {% else %}
                     {{ content.field_text_block}}
