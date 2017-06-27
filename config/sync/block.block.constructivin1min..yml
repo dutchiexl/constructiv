@@ -1,0 +1,31 @@
+uuid: 6a3e0302-08a3-475c-b64b-651e66ec587d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9657b66c-b2c2-4386-b1de-29a5356f92b2'
+  module:
+    - block_content
+    - system
+  theme:
+    - constructiv
+id: constructivin1min.
+theme: constructiv
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'block_content:9657b66c-b2c2-4386-b1de-29a5356f92b2'
+settings:
+  id: 'block_content:9657b66c-b2c2-4386-b1de-29a5356f92b2'
+  label: 'Constructiv in 1 min.'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

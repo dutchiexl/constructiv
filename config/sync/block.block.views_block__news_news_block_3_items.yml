@@ -12,7 +12,7 @@ dependencies:
 id: views_block__news_news_block_3_items
 theme: constructiv
 region: sidebar_second
-weight: 0
+weight: -7
 provider: null
 plugin: 'views_block:news-news_block_3_items'
 settings:
