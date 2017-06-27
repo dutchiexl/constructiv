@@ -1,9 +1,13 @@
-body{
-background-color: $main-background-color;
+body {
+  background-color: $main-background-color;
 }
 
 .main-container {
   > .content {
-   // padding: 20px 60px 0;
+    // padding: 20px 60px 0;
   }
+}
+
+.container-fluid {
+  padding: 0;
 }

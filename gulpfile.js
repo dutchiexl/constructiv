@@ -75,7 +75,7 @@ gulp.task('browser-sync', ['sass'], function () {
  * Clear cache when Drupal related files are changed
  */
 gulp.task('watch', function () {
-    gulp.watch(['web/themes/constructiv/scss/*'], ['sass']);
+    gulp.watch(['web/themes/constructiv/scss/**/*'], ['sass']);
 });
 
 /**
