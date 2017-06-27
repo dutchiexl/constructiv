@@ -1,0 +1,24 @@
+uuid: b7a19369-133b-450f-b0d3-f621d6652499
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-bar
+  module:
+    - system
+  theme:
+    - constructiv
+id: topbar
+theme: constructiv
+region: navigation_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:top-bar'
+settings:
+  id: 'system_menu_block:top-bar'
+  label: 'Top bar'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

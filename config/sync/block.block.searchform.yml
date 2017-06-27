@@ -1,0 +1,20 @@
+uuid: d22837d4-2450-43c6-b3a0-9c33d5402af4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - constructiv
+id: searchform
+theme: constructiv
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

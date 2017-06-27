@@ -1,0 +1,28 @@
+uuid: 3196fe4c-1c81-4e55-947c-db4252eb2f98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blocks
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_blocks
+field_name: field_blocks
+entity_type: node
+bundle: page
+label: Blocks
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      header_text_with_bg:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

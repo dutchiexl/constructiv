@@ -1,0 +1,21 @@
+uuid: 75f65c1b-238b-4799-82b1-66270cb2ef9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.header_text_with_bg
+  module:
+    - text
+id: paragraph.header_text_with_bg.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: header_text_with_bg
+label: Text
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

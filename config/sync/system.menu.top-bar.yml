@@ -1,0 +1,8 @@
+uuid: 9af7aa34-2105-4ddd-9ab6-d3e24a978066
+langcode: en
+status: true
+dependencies: {  }
+id: top-bar
+label: 'Top bar'
+description: 'Top navigation menu'
+locked: false

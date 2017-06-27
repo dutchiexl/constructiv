@@ -1,0 +1,27 @@
+uuid: 092f57c3-889a-4fd4-9faf-ea9294b2fc19
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_layout
+field_name: field_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: image_left
+      label: 'Image on the left'
+    -
+      value: image_right
+      label: 'Image on the right'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
