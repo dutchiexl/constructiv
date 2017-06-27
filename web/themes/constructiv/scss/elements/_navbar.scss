@@ -2,22 +2,29 @@ body {
   margin-top: 0px;
 }
 
-
 .navbar {
   padding: 20px 60px 0;
   border: 0;
-  background-color:$brand-primary;
+  background-color: $brand-primary;
 
   .logo {
     margin: 0;
   }
 
+  header {
+    .input-group {
+      float:right;
+      width:20%;
+    }
+  }
   .navbar-nav li {
-    a{
+
+
+    a {
       color: white;
 
       &:hover {
-        background-color:transparent;
+        background-color: transparent;
         color: $brand-secondary;
 
       }
@@ -26,12 +33,14 @@ body {
 
   }
 
-  .nav-top{
-    display:block;
-    width:100%;
-    height:50px;
+  .nav-top {
+    display: block;
+    width: 100%;
+    height: 50px;
   }
-  .nav-top ul {float:right; }
+  .nav-top ul {
+    float: right;
+  }
 
   .nav-top ul li {
 
@@ -42,7 +51,7 @@ body {
       color: white;
 
       &:hover {
-        background-color:transparent;
+        background-color: transparent;
         color: $brand-secondary;
 
       }
