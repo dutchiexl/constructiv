@@ -11,7 +11,7 @@ _core:
 id: constructiv_help
 theme: constructiv
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: help_block
 settings:

@@ -1,16 +1,16 @@
-uuid: f84ca881-05c3-47de-94c7-9387e2aece24
+uuid: 4b8c3bd7-d1a9-4d04-aecd-5ddd3c71c855
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.special_page
+    - node.type.news
   module:
     - text
-id: node.special_page.body
+id: node.news.body
 field_name: body
 entity_type: node
-bundle: special_page
+bundle: news
 label: Body
 description: ''
 required: false

@@ -1,0 +1,8 @@
+uuid: 995b0bcc-5843-489c-9881-134b9984ab80
+langcode: en
+status: true
+dependencies: {  }
+id: content_block
+label: 'Content block'
+revision: 0
+description: 'Use this block to create a block with an image and text'

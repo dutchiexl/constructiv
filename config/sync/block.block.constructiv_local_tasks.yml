@@ -9,7 +9,7 @@ _core:
 id: constructiv_local_tasks
 theme: constructiv
 region: content
-weight: -6
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
