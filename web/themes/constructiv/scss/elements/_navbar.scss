@@ -2,15 +2,51 @@ body {
   margin-top: 0px;
 }
 
+
 .navbar {
   padding: 20px 60px 0;
   border: 0;
+  background-color:$brand-primary;
 
   .logo {
     margin: 0;
   }
 
-  .navbar-nav {
-    float: right;
+  .navbar-nav li {
+    a{
+      color: white;
+
+      &:hover {
+        background-color:transparent;
+        color: $brand-secondary;
+
+      }
+
+    }
+
   }
+
+  .nav-top{
+    display:block;
+    width:100%;
+    height:50px;
+  }
+  .nav-top ul {float:right; }
+
+  .nav-top ul li {
+
+    display: inline-block;
+    padding-left: 15px;
+
+    a {
+      color: white;
+
+      &:hover {
+        background-color:transparent;
+        color: $brand-secondary;
+
+      }
+    }
+  }
+
 }
