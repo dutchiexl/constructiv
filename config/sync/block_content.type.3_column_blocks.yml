@@ -1,0 +1,8 @@
+uuid: e864f3c5-2260-4573-b660-882fc018e3bb
+langcode: en
+status: true
+dependencies: {  }
+id: 3_column_blocks
+label: '3 column blocks'
+revision: 0
+description: 'Use this block type to create a block with 3 columns'

@@ -1,0 +1,30 @@
+uuid: 857b2d4e-4319-4103-ac3f-eb5fbc55f0a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - constructiv
+id: views_block__news_news_block_3_items
+theme: constructiv
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:news-news_block_3_items'
+settings:
+  id: 'views_block:news-news_block_3_items'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,34 @@
+uuid: b47db416-3000-4d0c-9c99-5313e84b159c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_blocks
+    - node.type.special_page
+  module:
+    - entity_reference_revisions
+id: node.special_page.field_paragraph_blocks
+field_name: field_paragraph_blocks
+entity_type: node
+bundle: special_page
+label: Blocks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      2_columns_text:
+        weight: 4
+        enabled: false
+      header_text_with_bg:
+        weight: 5
+        enabled: false
+      text_with_image:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

@@ -4,25 +4,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.special_page.body
+    - field.field.node.special_page.field_hero_image
+    - field.field.node.special_page.field_paragraph_blocks
     - node.type.special_page
   module:
-    - text
     - user
 id: node.special_page.teaser
 targetEntityType: node
 bundle: special_page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_hero_image: true
+  field_paragraph_blocks: true
