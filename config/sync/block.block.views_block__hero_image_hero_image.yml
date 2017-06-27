@@ -1,0 +1,25 @@
+uuid: 24486c24-1a94-4886-88cd-130319998ae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_image
+  module:
+    - views
+  theme:
+    - constructiv
+id: views_block__hero_image_hero_image
+theme: constructiv
+region: header
+weight: -6
+provider: null
+plugin: 'views_block:hero_image-hero_image'
+settings:
+  id: 'views_block:hero_image-hero_image'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

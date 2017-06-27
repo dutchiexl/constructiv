@@ -1,0 +1,18 @@
+uuid: bb5f1222-e39c-4769-95f8-a21d8c21015f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Special page'
+type: special_page
+description: 'Use this content type to create speciual pages like the homepage or overview pages'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

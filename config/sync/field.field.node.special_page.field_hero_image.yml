@@ -1,0 +1,38 @@
+uuid: f9a0200e-82b3-42fb-a246-bdc889912d1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_image
+    - node.type.special_page
+  module:
+    - image
+id: node.special_page.field_hero_image
+field_name: field_hero_image
+entity_type: node
+bundle: special_page
+label: 'Hero image'
+description: 'This is the hero image that will be shown in the top section of the page'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'heroimages/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
