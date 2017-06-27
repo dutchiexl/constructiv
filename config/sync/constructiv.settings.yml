@@ -18,3 +18,14 @@ logo:
 fluid_container: 1
 table_responsive: '-1'
 table: ''
+region_wells:
+  navigation_top: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
