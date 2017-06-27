@@ -1,7 +1,0 @@
-uuid: 55b4b79e-c3f9-4e81-a924-88900cf57607
-langcode: en
-status: true
-dependencies: {  }
-id: 2_columns_text
-label: '2 columns text'
-behavior_plugins: {  }
