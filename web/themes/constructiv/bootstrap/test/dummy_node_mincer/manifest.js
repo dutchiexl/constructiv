@@ -39,18 +39,18 @@ var environment = new Mincer.Environment(process.cwd());
 
 // Include bootstrap scss load path
 var bootstrapPath = '../../';
-environment.appendPath(bootstrapPath + 'assets/stylesheets');
+environment.appendPath(bootstrapPath + 'vendor/stylesheets');
 
 // Include fonts load path
-environment.appendPath(bootstrapPath + 'assets/fonts');
+environment.appendPath(bootstrapPath + 'vendor/fonts');
 
-// Include dir with assets, root just for test
+// Include dir with vendor, root just for test
 environment.appendPath('./');
 
 
 //
 // Define environment essential *_path helper that will be available in the
-// processed assets. See `assets/stylesheets/app.css.ejs` for example.
+// processed vendor. See `vendor/stylesheets/app.css.ejs` for example.
 //
 
 
@@ -61,7 +61,7 @@ environment.ContextClass.defineAssetPath(function (pathname, options) {
     throw new Error("File " + pathname + " not found");
   }
 
-  return '/assets/' + asset.digestPath;
+  return '/vendor/' + asset.digestPath;
 });
 
 
@@ -69,14 +69,14 @@ environment.ContextClass.defineAssetPath(function (pathname, options) {
 // Create and compile Manifest
 //
 
-var manifest_path = process.argv[2] || __dirname + '/assets';
+var manifest_path = process.argv[2] || __dirname + '/vendor';
 
 var manifest = new Mincer.Manifest(environment, manifest_path);
 
 
 manifest.compile(['application.css'], function (err, assetsData) {
   if (err) {
-    console.error("Failed compile assets: " + (err.message || err.toString()));
+    console.error("Failed compile vendor: " + (err.message || err.toString()));
     process.exit(128);
   }
 

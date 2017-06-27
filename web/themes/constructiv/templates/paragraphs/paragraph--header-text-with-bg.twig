@@ -40,25 +40,18 @@
 'paragraph',
 'paragraph--type--' ~ paragraph.bundle|clean_class,
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-'text-with-image'
+'header-text-with-bg'
 ] %}
 <div{{ attributes.addClass(classes).setAttribute('id', (content.field_paragraph_id|field_raw).value) }}>
     <div class="column-wrapper">
         <div class="row">
-            <div class="left column">
-                {% if  (content.field_layout|field_raw).value == "image_left" %}
-                    {{ content.field_text_image }}
-                {% else %}
-                    {{ content.field_text_block}}
-                {% endif %}
-            </div>
-            <div class="right column">
-                {% if  (content.field_layout|field_raw).value == "image_left" %}
-                    {{ content.field_text_block}}
-                {% else %}
-                    {{ content.field_text_image }}
-                {% endif %}
-            </div>
+
+    <div class="bg-header-image" style="background-image: url('{{ file_url(content.field_background_image.0.entity.uri.value) }}')" >
+    {{ content.field_text }}
+    </div>
+
+
+
         </div>
     </div>
 </div>

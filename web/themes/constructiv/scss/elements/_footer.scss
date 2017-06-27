@@ -1,9 +1,9 @@
 footer.footer {
-  padding: 30px 0;
+  padding: 30px 30px;
   border-top: 1px solid #fff;
   background: #2f393c;
   color: #efefef;
-  text-align: center;
+  text-align: left;
 
   .menu {
     float: right;
@@ -11,5 +11,37 @@ footer.footer {
     a {
       color: white;
     }
+  }
+
+  .footer-title {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .social-list {
+
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding:10px;
+    }
+
+    li a {
+      color:#2f393c;
+      text-align:center;
+      font-size:25px;
+      margin:0;
+
+    }
+
+  }
+  .social-circle {
+    width: 50px;
+    height: 50px;
+    background: $brand-tertiary;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
   }
 }

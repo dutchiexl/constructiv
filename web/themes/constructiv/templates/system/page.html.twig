@@ -185,10 +185,25 @@
     </div>
 {% endblock %}
 
-{% if page.footer %}
-    {% block footer %}
-        <footer class="footer {{ container }}" role="contentinfo">
-            {{ page.footer }}
-        </footer>
-    {% endblock %}
-{% endif %}
+
+<footer class="footer {{ container }}" role="contentinfo">
+    <div class="col-sm-9">
+        <h2 class="footer-title">Constructiv</h2>
+        <span class="footer-address"> Koningsstraat 132 bus 1 1000 Brussel | Tel.(0)2 209 65 65 | Ondernemingsnummer 0406.466.622</span>
+    </div>
+    <div class="col-sm-3">
+        <ul class="social-list">
+            <li class="social-circle">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li class="social-circle">
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li class="social-circle">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+
