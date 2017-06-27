@@ -6,6 +6,10 @@
 @import '../bootstrap/assets/stylesheets/bootstrap/mixins';
 @import '../bootstrap/assets/stylesheets/bootstrap/grid';
 
+
+//add fontawesome
+@import '../../../../bower_components/components-font-awesome/scss/font-awesome';
+
 // Base-theme overrides.
 @import 'overrides';
 
