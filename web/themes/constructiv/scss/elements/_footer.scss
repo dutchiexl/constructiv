@@ -1,5 +1,5 @@
 footer.footer {
-  padding: 30px 30px;
+  padding: 30px 50px;
   border-top: 1px solid #fff;
   background: #2f393c;
   color: #efefef;
@@ -16,32 +16,40 @@ footer.footer {
   .footer-title {
     color: white;
     font-size: 2rem;
+    margin-top: 0;
   }
 
   .social-list {
 
     list-style: none;
+    margin-top: 23px;
 
     li {
       display: inline-block;
-      padding:10px;
+      margin-right: 11px;
+
     }
 
-    li a {
-      color:#2f393c;
-      text-align:center;
-      font-size:25px;
-      margin:0;
+    li i {
+      color: #2f393c;
+      text-align: center;
+      font-size: 16px;
+      padding-top: 4px;
+      padding-left: 4px;
+
+      &:hover {
+        color: $brand-secondary;
+      }
 
     }
 
   }
   .social-circle {
-    width: 50px;
-    height: 50px;
+    width: 23px;
+    height: 23px;
     background: $brand-tertiary;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
+    -moz-border-radius: 11.5px;
+    -webkit-border-radius: 11.5px;
+    border-radius: 11.5px;
   }
 }

@@ -5,9 +5,19 @@ body {
 .main-container {
   > .content {
     // padding: 20px 60px 0;
+
   }
 }
 
 .container-fluid {
   padding: 0;
+}
+
+.views-field-field-hero-image {
+
+  .img-responsive {
+    width:100%;
+    height:auto;
+    margin-top:-50px;
+  }
 }
