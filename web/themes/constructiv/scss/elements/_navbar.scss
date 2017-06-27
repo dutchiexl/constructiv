@@ -11,18 +11,25 @@ body {
     margin: 0;
   }
 
-  header {
+  #search-block-form {
     .input-group {
-      float:right;
-      width:20%;
+      float: right;
+      width: 20%;
     }
   }
-  .navbar-nav li {
 
+  .navbar-nav {
+    margin-bottom: 20px;
+    float:right;
+  }
+
+
+  .navbar-nav li {
 
     a {
       color: white;
-
+      padding-top: 5px;
+      padding-right: 45px;
       &:hover {
         background-color: transparent;
         color: $brand-secondary;
