@@ -37,10 +37,13 @@
       margin-top: 15px;
       width: 100%;
       height: auto;
-
     }
   }
+}
 
-
+.field--name-field-paragraph-blocks {
+  > .field--item {
+    margin-bottom: $grid-gutter-width;
+  }
 }
 
