@@ -5,6 +5,11 @@ body {
 .main-container {
   > .content {
     // padding: 20px 60px 0;
+
+    > .inner-wrapper {
+      @include container;
+
+    }
   }
 }
 
