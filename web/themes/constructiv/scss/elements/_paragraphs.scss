@@ -48,7 +48,11 @@
     padding:0;
     margin:0;
   }
+}
 
-
+.field--name-field-paragraph-blocks {
+  > .field--item {
+    margin-bottom: $grid-gutter-width;
+  }
 }
 
