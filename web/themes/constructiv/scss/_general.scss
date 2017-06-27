@@ -6,6 +6,10 @@ body {
   > .content {
     // padding: 20px 60px 0;
 
+    > .inner-wrapper {
+      @include container;
+
+    }
   }
 }
 
@@ -16,8 +20,8 @@ body {
 .views-field-field-hero-image {
 
   .img-responsive {
-    width:100%;
-    height:auto;
-    margin-top:-50px;
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
   }
 }
