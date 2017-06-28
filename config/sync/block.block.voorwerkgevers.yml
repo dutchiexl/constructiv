@@ -1,0 +1,32 @@
+uuid: c646904c-2df6-4986-bdec-5bbd76892673
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.voor-werkgevers
+  module:
+    - node
+    - system
+  theme:
+    - constructiv
+id: voorwerkgevers
+theme: constructiv
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:voor-werkgevers'
+settings:
+  id: 'system_menu_block:voor-werkgevers'
+  label: 'Voor werkgevers'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

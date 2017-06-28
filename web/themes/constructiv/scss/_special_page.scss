@@ -1,4 +1,15 @@
+body.page-node-type-special-page {
+  .region-content {
+    margin-top: $grid-gutter-width;
+  }
+}
+
 body.path-frontpage {
+
+  .region-content {
+    margin-top: 0;
+  }
+
   .main-container {
     > .content {
       > .inner-wrapper {

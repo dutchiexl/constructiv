@@ -1,0 +1,12 @@
+.region-sidebar-second,
+.region-sidebar-first {
+  section,
+  nav {
+    margin-bottom: $grid-gutter-width / 2;
+    @include drop-shadow;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

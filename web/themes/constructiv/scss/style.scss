@@ -14,6 +14,11 @@
 @import "elements/navbar";
 @import "elements/footer";
 @import "elements/paragraphs";
-@import "special_page";
+@import "elements/buttons";
+@import "sidebar";
 @import "news";
 @import "general";
+
+// Page specific styles.
+@import "special_page";
+@import "basic_page";

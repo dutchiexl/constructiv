@@ -1,0 +1,35 @@
+body.page-node-type-page {
+  .region-content article{
+    @include make-sm-column(9);
+    line-height: 1.8em;
+    margin-top: $grid-gutter-width;
+
+    h2 {
+      color: $brand-primary;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px;
+        padding-left: 2em;
+      }
+
+      li:before {
+        content: "\f00c"; /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -2em; /* same as padding-left set on li */
+        width: 2em; /* same as padding-left set on li */
+        color: $brand-secondary;
+      }
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -31,14 +31,23 @@ body {
       color: white;
       padding-top: 5px;
       padding-right: 45px;
-      &:hover {
+      &:hover, &:focus {
+        background-color: transparent;
+        color: $brand-secondary;
+      }
+    }
+
+    &.active {
+      a {
         background-color: transparent;
         color: $brand-secondary;
 
+        &:hover, &:focus {
+          background-color: transparent;
+          color: $brand-secondary;
+        }
       }
-
     }
-
   }
 
   .nav-top {
