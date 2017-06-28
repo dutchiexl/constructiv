@@ -1,0 +1,45 @@
+.region-sidebar-first {
+
+  h2 {
+    width: 100%;
+    display: block;
+    background-color: $brand-primary;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+    padding-top: 15px;
+    margin-top: 0;
+    font-weight:bold;
+  }
+
+  nav {
+    margin-top: $grid-gutter-width;
+  }
+
+  nav ul {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  nav ul li {
+
+    font-size: 1.1rem;
+    border-bottom: solid 1px #979797;
+    a {
+      font-weight: bold;
+      font-size: 1.7rem;
+
+      &:hover {
+        background-color:white;
+        color:$brand-secondary;
+      }
+    }
+
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+
+  }
+}

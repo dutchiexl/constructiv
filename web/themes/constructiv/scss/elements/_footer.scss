@@ -27,15 +27,14 @@ footer.footer {
     li {
       display: inline-block;
       margin-right: 11px;
-
+      text-align: center;
     }
 
     li i {
       color: #2f393c;
       text-align: center;
       font-size: 16px;
-      padding-top: 4px;
-      padding-left: 4px;
+      display: inline-block;
 
       &:hover {
         color: $brand-secondary;
@@ -51,5 +50,6 @@ footer.footer {
     -moz-border-radius: 11.5px;
     -webkit-border-radius: 11.5px;
     border-radius: 11.5px;
+    line-height: 27px;
   }
 }
